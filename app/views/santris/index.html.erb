@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Santris</h1>
+
+<div id="santris">
+  <% @santris.each do |santri| %>
+    <%= render santri %>
+    <p>
+      <%= link_to "Show this Post", santri %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New Post", new_santri_path %>

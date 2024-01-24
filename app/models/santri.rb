@@ -1,0 +1,2 @@
+class Santri < ApplicationRecord
+end
