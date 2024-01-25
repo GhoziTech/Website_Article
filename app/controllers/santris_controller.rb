@@ -65,6 +65,6 @@ class SantrisController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def santri_params
-      params.require(:santri).permit(:nama, :kelas)
+      params.require(:santri).permit(:title, :deskripsi, :image_url)
     end
 end

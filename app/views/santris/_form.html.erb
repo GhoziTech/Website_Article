@@ -12,13 +12,18 @@
   <% end %>
 
   <div>
-    <%= form.label :nama, style: "display: block" %>
-    <%= form.text_field :nama %>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
   </div>
 
   <div>
-    <%= form.label :kelas, style: "display: block" %>
-    <%= form.text_field :kelas %>
+    <%= form.label :deskripsi, style: "display: block" %>
+    <%= form.text_field :deskripsi %>
+  </div>
+
+  <div>
+    <%= form.label :image_url, style: "display: block" %>
+    <%= form.file_field :image_url %>
   </div>
 
   <div>

@@ -1,12 +1,10 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Santris</h1>
-
 <div id="santris">
   <% @santris.each do |santri| %>
     <%= render santri %>
     <p>
-      <%= link_to "Show this Post", santri %>
+      <%= link_to "Show this post", santri %>
     </p>
   <% end %>
 </div>

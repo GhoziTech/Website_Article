@@ -1,12 +1,16 @@
 <div id="<%= dom_id santri %>">
   <p>
-    <strong>Nama:</strong>
-    <%= santri.nama %>
+    <strong>Judul:</strong>
+    <%= santri.title %>
   </p>
 
   <p>
-    <strong>Kelas:</strong>
-    <%= santri.kelas %>
+    <strong>Deskripsi:</strong>
+    <%= santri.deskripsi %>
   </p>
+
+  <p>
+    <strong>Image:</strong>
+    <%= image_tag(santri.image_url.url, alt: 'Image', class: 'img-fluid') if santri.image_url? %>
 
 </div>
