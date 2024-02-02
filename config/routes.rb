@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  resources :comments
   devise_for :users
+  resources :users
   resources :santris
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

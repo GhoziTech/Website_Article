@@ -1,10 +1,14 @@
 <p style="color: green"><%= notice %></p>
+<div class="row g-5">
+  <div class="col-md-8">
+    <%= render @santri %>
 
-<%= render @santri %>
+    <%= render "form-comment", comment: @comment %>
+    <%= render "index-comments", comments: @santri.comments %>
 
-<div>
-  <%= link_to "Edit this Santri", edit_santri_path(@santri) %> |
-  <%= link_to "Back to Santri", santris_path %>
+    <div>
+      <%= link_to "Edit this Santri", edit_santri_path(@santri) %> |
+      <%= link_to "Back to Santri", santris_path %>
 
-  <%= button_to "Destroy this santri", @santri, method: :delete %>
-</div>
+      <%= button_to "Destroy this santri", @santri, method: :delete %>
+    </div>

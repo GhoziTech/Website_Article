@@ -8,6 +8,7 @@ class SantrisController < ApplicationController
 
   # GET /santris/1 or /santris/1.json
   def show
+    @comment = Comment.new
   end
 
   # GET /santris/new
@@ -22,6 +23,7 @@ class SantrisController < ApplicationController
   # POST /santris or /santris.json
   def create
     @santri = Santri.new(santri_params)
+    @santri.user = current_user
 
     respond_to do |format|
       if @santri.save
